@@ -17,6 +17,11 @@ const routes=[
         
             },
             {
+                path: "/by-name/:name?",
+                name: "byName",
+                component: MealsByName,
+        
+            }, {
                 path: "/by-letter/:letter?",
                 name: "byLetter",
                 component: MealsByLetter,
@@ -33,14 +38,6 @@ const routes=[
     {
         path: '/guest',
         component: GuestLayout,
-        children:[
-            {
-                path: "/by-name/:name?",
-                name: "byName",
-                component: MealsByName,
-        
-            },
-        ]
     },
   
 ];
