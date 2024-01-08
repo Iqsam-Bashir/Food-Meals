@@ -12,7 +12,7 @@
             <h3 class="font-bold">{{meal.strMeal}}</h3>
             <p>Lorem ipsum dolor sit amet cque iusto nobis vero possimus impedit officiis, numquam eveniet magni tenetur.</p>
             <div class="flex items-center justify-between">
-                <YoutubeButton :href="meal.strYoutube" />
+                <a :href="meal.strYoutube"> <img :src="img" class="w-[50px]"> </a>
             </div>
         </div>
     </div>
@@ -25,6 +25,7 @@ import {onMounted, ref} from 'vue';
 import {useRoute} from "vue-router";
 import store from '../store';
 import YoutubeButton from '../components/YoutubeButton.vue';
+import img from '../assets/Images/youtube-icon.png'
 
 const keyword = ref('');
 const route = useRoute();
