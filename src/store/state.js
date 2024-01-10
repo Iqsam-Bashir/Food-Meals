@@ -3,5 +3,8 @@ export default {
 //     loading: false,
 //     data:[]
 // } we can set the loading here
-searchedMeals:[]
+searchedMeals:[],
+mealsByLetter:[],
+mealsByIngredient:[],
+
 }
